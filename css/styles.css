@@ -19,6 +19,46 @@ body {
   --h1-font-color: rgba(255, 255, 255, 1);
 }
 
+
+a[href="mailto:info@devstudio.com"]:hover,
+a[href="mailto:info@devstudio.com"]:focus {
+  color: var(--hover-color);
+}
+
+a[href="mailto:info@example.com"]:hover,
+a[href="mailto:info@example.com"]:focus {
+  color: var(--hover-color);
+}
+a[href="tel:+48111111111"]:hover,
+a[href="tel:+48111111111"]:focus {
+  color: var(--hover-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  color: var(--h1-font-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+}
+
+h2 {
+  color: var(--h2-font-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
 .menu {
   color: var(--nav-text-color);
   font-size: 16px;
@@ -57,49 +97,8 @@ body {
 .footer-contact {
   color: var(--footer-text-contact-color);
 }
-
-a[href="mailto:info@devstudio.com"]:hover,
-a[href="mailto:info@devstudio.com"]:focus {
-  color: var(--hover-color);
-}
-
-a[href="mailto:info@example.com"]:hover,
-a[href="mailto:info@example.com"]:focus {
-  color: var(--hover-color);
-}
-a[href="tel:+48111111111"]:hover,
-a[href="tel:+48111111111"]:focus {
-  color: var(--hover-color);
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-li {
-  list-style-type: none;
-}
-
 .descryption {
-  background-color: 
-rgba(47, 48, 58, 1);
-}
-h1 {
-  color: var(--h1-font-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-}
-
-h2 {
-  color: var(--h2-font-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  background-color: rgba(47, 48, 58, 1);
 }
 
 .header-logo {
