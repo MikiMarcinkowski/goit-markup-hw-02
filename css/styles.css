@@ -1,21 +1,22 @@
+:root {
+  --primary-color: rgba(117, 117, 117, 1);
+  --secondary-color: rgba(255, 255, 255, 1);
+  --semiwhite-color: rgba(255, 255, 255, 0.6);
+  --primary-black: rgba(33, 33, 33, 1);
+  --blue-color: rgba(33, 150, 243, 1);
+  --main-button-color: rgba(245, 244, 250, 1);
+  --secondary-black: rgba(0, 0, 0, 1);
+  --header-background-color: rgba(236, 236, 236, 1);
+  --dark-color: rgba(47, 48, 58, 1);
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  color: rgba(117, 117, 117, 1);
-  background-color: rgba(255, 255, 255, 1);
-}
-:root {
-  --header-color: rgba(33, 33, 33, 1);
-  --logo-and-hover-color: rgba(33, 150, 243, 1);
-  --buttons-color-inactive: rgba(245, 244, 250, 1);
-  --logo-text-header-color: rgba(0, 0, 0, 1);
-  --h1-and-footer-text-color: rgba(255, 255, 255, 1);
-  --main-color: rgba(117, 117, 117, 1);
-  --footer-text-contact-color: rgba(255, 255, 255, 0.6);
-  --header-background-color: rgba(236, 236, 236, 1);
-  --dark-background-color: rgba(47, 48, 58, 1);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 .menu {
-  color: var(--header-color);
+  color: var(--primary-black);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.14;
@@ -24,7 +25,7 @@ body {
 }
 
 .main-header-title {
-  color: var(--h1-and-footer-text-color);
+  color: var(--secondary-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -32,7 +33,7 @@ body {
 }
 
 .section-title {
-  color: var(--header-color);
+  color: var(--primary-black);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -41,11 +42,11 @@ body {
 
 .menu:hover,
 .menu:focus {
-  color: var(--logo-and-hover-color);
+  color: var(--blue-color);
 }
 
 .header-contact {
-  color: var(--main-color);
+  color: inherit;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -55,51 +56,52 @@ body {
 
 .header-contact:hover,
 .header-contact:focus {
-  color: var(--logo-and-hover-color);
+  color: var(--blue-color);
 }
 
 .footer-style {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-color);
 }
 
 .footer-description {
-  font-family: "Roboto";
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
-  font-style: normal;
+  font-style: inherit;
   letter-spacing: 0.03em;
+  text-decoration: : none;
 }
 .adress-style {
-  color: var(--h1-and-footer-text-color);
-  font-family: "Roboto";
+  color: var(--secondary-color);
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
-  font-style: normal;
+  font-style: inherit;
   letter-spacing: 0.03em;
 }
 
 .footer-contact {
-  color: var(--footer-text-contact-color);
+  color: var(--semi-white-color);
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
-  font-style: normal;
+  font-style: inherit;
   letter-spacing: 0.03em;
 }
 
 .footer-contact:hover,
 .footer-contact:focus {
-  color: var(--logo-and-hover-color);
+  color: var(--blue-color);
 }
 
 .descryption {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-color);
 }
 
 .header-logo {
   font-family: "Raleway";
-  color: var(--logo-text-header-color);
+  color: var(--secondary-black);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -109,7 +111,7 @@ body {
 
 .footer-logo {
   font-family: "Raleway";
-  color: var(--h1-and-footer-text-color);
+  color: var(--secondary-color);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -118,26 +120,7 @@ body {
 }
 
 .in-logo {
-  color: var(--logo-and-hover-color);
-}
-
-.buttons {
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  color: var(--header-color);
-  letter-spacing: 0.03em;
-  background-color: var(--buttons-color-inactive);
-  border: none;
-  border-radius: 4px;
-  height: 38px;
-}
-
-.buttons:hover,
-.buttons:focus {
-  background-color: var(--logo-and-hover-color);
+  color: var(--blue-color);
 }
 
 .main-button {
@@ -146,9 +129,9 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.88;
-  color: var(--h1-and-footer-text-color);
+  color: var(--secondary-color);
   letter-spacing: 0.06em;
-  background-color: var(--logo-and-hover-color);
+  background-color: var(--blue-color);
   width: 200px;
   height: 50px;
   border: none;
@@ -157,11 +140,33 @@ body {
 
 .main-button:hover,
 .main-button:focus {
-  background-color: var(--logo-and-hover-color);
+  background-color: var(--main-button-color);
+  color: var(--blue-color);
 }
 
+
+.buttons {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  color: var(--primary-black);
+  letter-spacing: 0.03em;
+  background-color: var(--main-button-color);
+  border: none;
+  border-radius: 4px;
+  height: 38px;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: var(--blue-color);
+}
+
+
 .paragraph-title {
-  color: var(--header-color);
+  color: var(--primary-black);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -169,26 +174,28 @@ body {
 }
 
 .paragraph-text {
+  color: inherit;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 .team-names {
-  color: var(--header-color);
+  color: var(--primary-black);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .position-name {
+  color: inherit;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 .portfolio-title {
-  color: var(--header-color);
+  color: var(--primary-black);
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -196,6 +203,7 @@ body {
 }
 
 .portfolio-subtitle {
+  color: inherit;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
