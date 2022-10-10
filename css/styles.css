@@ -69,7 +69,6 @@ body {
   line-height: 1.71;
   font-style: inherit;
   letter-spacing: 0.03em;
-  
 }
 .adress-style {
   color: var(--secondary-color);
@@ -141,9 +140,7 @@ body {
 .main-button:hover,
 .main-button:focus {
   background-color: var(--main-button-color);
-  color: var(--blue-color);
 }
-
 
 .buttons {
   cursor: pointer;
@@ -163,7 +160,6 @@ body {
 .buttons:focus {
   background-color: var(--blue-color);
 }
-
 
 .paragraph-title {
   color: var(--primary-black);
