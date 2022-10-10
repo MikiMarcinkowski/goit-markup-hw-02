@@ -140,6 +140,7 @@ body {
 .main-button:hover,
 .main-button:focus {
   background-color: var(--main-button-color);
+  color: var(--blue-color);
 }
 
 .buttons {
