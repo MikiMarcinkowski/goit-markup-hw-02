@@ -61,15 +61,21 @@ body {
 
 .footer-style {
   background-color: var(--dark-color);
-}
-
-.footer-description {
   font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
   font-style: inherit;
   letter-spacing: 0.03em;
 }
+
+.addres-description {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: inherit;
+  letter-spacing: 0.03em;
+}
+
 .adress-style {
   color: var(--secondary-color);
   font-family: inherit;
@@ -143,7 +149,7 @@ body {
   color: var(--blue-color);
 }
 
-.buttons {
+.button {
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
@@ -157,8 +163,8 @@ body {
   height: 38px;
 }
 
-.buttons:hover,
-.buttons:focus {
+.button:hover,
+.button:focus {
   background-color: var(--blue-color);
 }
 
